@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+
+<suite name="Parallel Testing Suite" parallel="tests">
+    <test name="Parallel Tests 1" parallel="methods">
+        <classes>
+            <class name="tests.GoogleHomePageTest"/>
+        </classes>
+    </test>
+    <test name="Parallel Tests 2" parallel="methods">
+        <classes>
+            <class name="tests.GoogleResultPageTest"/>
+        </classes>
+    </test>
+    <test name="Parallel Tests 3" parallel="methods">
+        <classes>
+            <class name="tests.GoogleResultPageTest"/>
+        </classes>
+    </test>
+    <test name="Parallel Tests 4" parallel="methods">
+        <classes>
+            <class name="tests.GoogleResultPageTest"/>
+        </classes>
+    </test>
+    <test name="Parallel Tests 5" parallel="methods">
+        <classes>
+            <class name="tests.GoogleResultPageTest"/>
+        </classes>
+    </test>
+</suite>
