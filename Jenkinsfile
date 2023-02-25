@@ -1,7 +1,9 @@
 pipeline {
+
     agent any
+
     stages {
-    stage('Build Jar')
+    stage('Build Jar'){
         steps{
             bat "mvn clean package -DskipTests"
         }
@@ -17,6 +19,6 @@ pipeline {
                     bat "docker login --username=${user} --password=${pass}"
                     bat "docker push emilliaclarke/selenium-docker:latest"
                     }
-                    }
-                    }
-                    }
+    }
+   }
+}
